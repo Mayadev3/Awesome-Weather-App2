@@ -1,0 +1,148 @@
+body {
+  background-color: #f9f7fe;
+  padding-bottom: 300px;
+}
+.container {
+  background-color: white;
+  margin: 0 auto;
+  height: 120vh;
+  width: 800px;
+  border-radius: 17px;
+  margin-top: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.app-title {
+  padding: 30px;
+}
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 47px;
+  font-weight: bold;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #0a58ca;
+
+  transition: all 0.1s ease-out;
+}
+a:hover {
+  color: #f9c018;
+}
+#search-input {
+  margin-left: 27px;
+  padding-left: 23px;
+  background-color: #f9f7fe;
+  width: 560px;
+  height: 57px;
+  border-radius: 9px;
+  border: none;
+  color: #a5a1b4;
+  display: inline-block;
+  font-family: "Manrope", sans-serif;
+}
+.btn-primary {
+  width: 150px;
+  padding: 11px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: -5px;
+  margin-left: 10px;
+  font-family: "Anton", sans-serif;
+}
+.hr1 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #d3d3d3;
+}
+ul.list-left {
+  list-style: none;
+  margin-top: 70px;
+}
+.first-city {
+  font-size: 47px;
+  line-height: 80px;
+  font-family: "Anton", sans-serif;
+}
+ul li.date-description,
+li.humidity-wind {
+  color: #949494;
+  font-family: "Manrope", sans-serif;
+}
+.humidity-info,
+.wind-info {
+  color: #f9b30a;
+  font-family: "Manrope", sans-serif;
+}
+.percentage {
+  color: #f9b30a;
+}
+.speed-unit {
+  color: #f9b30a;
+}
+.list-right {
+  list-style: none;
+  margin-top: 45px;
+  margin-left: 70px;
+}
+img.weather-icon {
+  width: 85px;
+  height: 85px;
+  margin-right: -5px;
+}
+.temp-info {
+  font-size: 70px;
+  position: relative;
+  top: 25px;
+  left: 5px;
+  font-family: "Anton", sans-serif;
+}
+sup {
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+#forecast {
+  text-align: center;
+  margin-top: 50px;
+}
+.row-day {
+  color: #0a58ca;
+  font-family: "Anton", sans-serif;
+  margin-bottom: 10px;
+}
+.icon2 {
+  width: 50px;
+  height: 50px;
+}
+.temp-max {
+  font-family: "Manrope", sans-serif;
+  color: #f9b30a;
+  margin-right: 13px;
+  margin-left: 8px;
+}
+.temp-min {
+  font-family: "Manrope", sans-serif;
+  color: #f9b30a;
+  opacity: 0.5;
+}
+.hr2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  color: #d3d3d3;
+}
+p.code-reference {
+  text-align: center;
+  color: #949494;
+  font-size: 10px;
+}
+p.code-reference a {
+  text-decoration: none;
+  color: #f9b30a;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather It Up</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Manrope:wght@200;300&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9e3240bfaa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-title">
+        <h1>
+          <a href="https://openweathermap.org/api" target="_blank"
+            >Weather Up</a
+          >
+        </h1>
+      </div>
+      <form id="search-form">
+        <input
+          type="search"
+          class="form-control"
+          autocomplete="off"
+          autofocus="off"
+          id="search-input"
+          placeholder="Enter a City.."
+        />
+        <input type="submit" value="Search" class="btn btn-primary" />
+      </form>
+      <hr class="hr1" />
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-left">
+            <li class="first-city" id="main-city"></li>
+            <li class="date-description">
+              <span id="day-time"></span>, <span id="description"></span>
+            </li>
+            <li class="humidity-wind">
+              Humidity: <span class="humidity-info" id="humidity-info"></span
+              ><span class="percentage">%</span>, Wind:
+              <span class="wind-info" id="wind-info"></span
+              ><span class="speed-unit">km/h</span>
+            </li>
+          </ul>
+        </div>
+        <!--end of col-6-->
+        <div class="col-6">
+          <ul class="list-right">
+            <li>
+              <img
+                src="images/suncloud.png"
+                class="weather-icon"
+                id="main-icon"
+              />
+              <span class="temp-info" id="temp-info"></span><sup>°C</sup>
+            </li>
+          </ul>
+        </div>
+        <!--end of col-6-->
+      </div>
+      <!--end of row-->
+      <div id="forecast"></div>
+      <div class="source">
+        <hr class="hr2" />
+        <p class="code-reference">
+          Coded by
+          <a href="https://github.com/Mayadev3/Weather-App" target="_blank">
+            Maya</a
+          >, designed by
+          <a href="https://www.shecodes.io/" target="_blank">Shecodes</a>, is
+          <a href="https://github.com/Mayadev3/Weather-App" target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and hosted on
+          <a
+            href="https://profound-travesseiro-db6ba2.netlify.app/"
+            target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- end of container-->
+
+    <!--end of row-->
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
